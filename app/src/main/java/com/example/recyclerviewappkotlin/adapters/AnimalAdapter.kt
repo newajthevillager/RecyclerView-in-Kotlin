@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.recyclerviewappkotlin.R
 import com.example.recyclerviewappkotlin.models.Animal
 import kotlinx.android.synthetic.main.single_row_animals.view.*

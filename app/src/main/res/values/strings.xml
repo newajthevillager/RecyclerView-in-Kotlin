@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">RecyclerView App Kotlin</string>
+    <string name="animalKey">AnimalKey</string>
 </resources>

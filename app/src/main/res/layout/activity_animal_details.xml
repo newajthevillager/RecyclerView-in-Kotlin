@@ -4,13 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.AnimalDetails">
+    tools:context=".activities.AnimalDetails"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/ivAnimalDetailsId"
+        android:src="@mipmap/ant"/>
 
     <TextView
-        android:id="@+id/tvId"
-        android:text="Hello Buffalo"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:id="@+id/tvIdAnimalName"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Hello Buffalo">
 
     </TextView>
 

@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity(), OnItemClickListener {
 
     override fun onItemClick(animal: Animal) {
         var intent = Intent(this, AnimalDetails::class.java)
-        Toast.makeText(this,"Animal name ${animal.name}",Toast.LENGTH_LONG).show()
+        intent.putExtra(getString(R.string.animalKey), animal)
         startActivity(intent)
     }
 
@@ -24,12 +24,12 @@ class MainActivity : AppCompatActivity(), OnItemClickListener {
         setContentView(R.layout.activity_main)
 
         var data : List<Animal> = arrayListOf(
-            Animal("Cat", R.drawable.cat), Animal("Tiger", R.drawable.tiger),
-            Animal("Lion", R.drawable.lion), Animal("Elephant", R.drawable.elephant),
-            Animal("Parrot", R.drawable.parrot), Animal("Python", R.drawable.python),
-            Animal("Dog", R.drawable.dog), Animal("Cow", R.drawable.cow),
-            Animal("Fish", R.drawable.fish), Animal("Ant", R.drawable.ant),
-            Animal("Hen", R.drawable.hen)
+            Animal("Cat", R.mipmap.cat), Animal("Tiger", R.mipmap.tiger),
+            Animal("Lion", R.mipmap.lion), Animal("Elephant", R.mipmap.elephant),
+            Animal("Parrot", R.mipmap.parrot), Animal("Python", R.mipmap.python),
+            Animal("Dog", R.mipmap.dog), Animal("Cow", R.mipmap.cow),
+            Animal("Fish", R.mipmap.fish), Animal("Ant", R.mipmap.ant),
+            Animal("Hen", R.mipmap.hen)
         )
 
         var layoutManager = LinearLayoutManager(this)
